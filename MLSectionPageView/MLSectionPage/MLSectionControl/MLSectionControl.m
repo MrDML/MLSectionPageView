@@ -55,8 +55,7 @@
 - (void)layoutSubviews{
     [super layoutSubviews];
     [self updateSectionItemFrame];
-    [self setNeedsLayout];
-    [self layoutIfNeeded];
+   
 }
 
 
@@ -294,7 +293,6 @@
     if (titles == nil) return;
     _titles = titles;
     
-    [self updateSectionItemFrame];
 }
 
 
