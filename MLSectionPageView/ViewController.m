@@ -7,16 +7,29 @@
 //
 
 #import "ViewController.h"
+#import "MLSectionPage/MLSectionPageView.h"
+
+
 
 @interface ViewController ()
-
+@property (nonatomic, strong) MLSectionPageView *sectionPageView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    
+    NSArray *titles = @[@"one",@"Two",@"Three",@"Four",@"Five",@"Six"];
+
+    self.sectionPageView = [[MLSectionPageView alloc] init];
+    self.sectionPageView.frame = CGRectMake(0, StatusBarHeight + 44, ScreeWidth, ScreeHeight - (StatusBarHeight + 44));
+    
+    self.sectionPageView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.sectionPageView];
+    
+    
 }
 
 

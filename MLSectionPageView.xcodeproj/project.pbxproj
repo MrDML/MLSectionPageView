@@ -15,6 +15,9 @@
 		48F926A8218AD805003200F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F926A7218AD805003200F5 /* main.m */; };
 		48F926B2218AD805003200F5 /* MLSectionPageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F926B1218AD805003200F5 /* MLSectionPageViewTests.m */; };
 		48F926BD218AD805003200F5 /* MLSectionPageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F926BC218AD805003200F5 /* MLSectionPageViewUITests.m */; };
+		48F926D0218ADA53003200F5 /* MLSectionPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F926CF218ADA53003200F5 /* MLSectionPageView.m */; };
+		48F926D3218AE49D003200F5 /* MLSectionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F926D2218AE49D003200F5 /* MLSectionControl.m */; };
+		48F926D6218AEA72003200F5 /* MLSectionScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F926D5218AEA72003200F5 /* MLSectionScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		48F926B8218AD805003200F5 /* MLSectionPageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLSectionPageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F926BC218AD805003200F5 /* MLSectionPageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSectionPageViewUITests.m; sourceTree = "<group>"; };
 		48F926BE218AD805003200F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F926CE218ADA53003200F5 /* MLSectionPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSectionPageView.h; sourceTree = "<group>"; };
+		48F926CF218ADA53003200F5 /* MLSectionPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSectionPageView.m; sourceTree = "<group>"; };
+		48F926D1218AE49D003200F5 /* MLSectionControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSectionControl.h; sourceTree = "<group>"; };
+		48F926D2218AE49D003200F5 /* MLSectionControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSectionControl.m; sourceTree = "<group>"; };
+		48F926D4218AEA72003200F5 /* MLSectionScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSectionScrollView.h; sourceTree = "<group>"; };
+		48F926D5218AEA72003200F5 /* MLSectionScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSectionScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		48F92697218AD802003200F5 /* MLSectionPageView */ = {
 			isa = PBXGroup;
 			children = (
+				48F926CA218ADA35003200F5 /* MLSectionPage */,
 				48F92698218AD802003200F5 /* AppDelegate.h */,
 				48F92699218AD802003200F5 /* AppDelegate.m */,
 				48F9269B218AD803003200F5 /* ViewController.h */,
@@ -130,6 +140,43 @@
 				48F926BE218AD805003200F5 /* Info.plist */,
 			);
 			path = MLSectionPageViewUITests;
+			sourceTree = "<group>";
+		};
+		48F926CA218ADA35003200F5 /* MLSectionPage */ = {
+			isa = PBXGroup;
+			children = (
+				48F926CB218ADA35003200F5 /* MLSectionTagBox */,
+				48F926CC218ADA35003200F5 /* MLSectionControl */,
+				48F926CD218ADA35003200F5 /* MLSectionPageView */,
+				48F926CE218ADA53003200F5 /* MLSectionPageView.h */,
+				48F926CF218ADA53003200F5 /* MLSectionPageView.m */,
+			);
+			path = MLSectionPage;
+			sourceTree = "<group>";
+		};
+		48F926CB218ADA35003200F5 /* MLSectionTagBox */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MLSectionTagBox;
+			sourceTree = "<group>";
+		};
+		48F926CC218ADA35003200F5 /* MLSectionControl */ = {
+			isa = PBXGroup;
+			children = (
+				48F926D1218AE49D003200F5 /* MLSectionControl.h */,
+				48F926D2218AE49D003200F5 /* MLSectionControl.m */,
+				48F926D4218AEA72003200F5 /* MLSectionScrollView.h */,
+				48F926D5218AEA72003200F5 /* MLSectionScrollView.m */,
+			);
+			path = MLSectionControl;
+			sourceTree = "<group>";
+		};
+		48F926CD218ADA35003200F5 /* MLSectionPageView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MLSectionPageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F926D0218ADA53003200F5 /* MLSectionPageView.m in Sources */,
 				48F9269D218AD803003200F5 /* ViewController.m in Sources */,
 				48F926A8218AD805003200F5 /* main.m in Sources */,
 				48F9269A218AD802003200F5 /* AppDelegate.m in Sources */,
+				48F926D6218AEA72003200F5 /* MLSectionScrollView.m in Sources */,
+				48F926D3218AE49D003200F5 /* MLSectionControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
