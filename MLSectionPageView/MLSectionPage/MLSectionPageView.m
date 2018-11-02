@@ -84,7 +84,15 @@
 //
 //            return str;
 //        };
+//
       
+//       __block typeof(self)weakSelf = self;
+        self.sectionControl.selectForIndexBlock = ^(NSInteger index) {
+//            NSLog(@"---->%d",weakSelf.sectionControl.selectionIndex);
+        };
+        
+//        [self.sectionControl moveSectionItemToPostionIndex:5 WithAnimated:YES];
+        
         [self addSubview:self.sectionControl];
     }
 

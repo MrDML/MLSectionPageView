@@ -20,12 +20,8 @@
 
 @property (nonatomic, strong)NSMutableArray *sectionItemWidthArray;
 
-
-
 @property (nonatomic, strong) CALayer *sectionItemBoxLayer;
 @property (nonatomic, strong) CALayer *sectionItemStripeLayer;
-
-
 
 @end
 
@@ -592,7 +588,7 @@
     
 }
 
-#pragma marrk - Getter
+
 
 
 

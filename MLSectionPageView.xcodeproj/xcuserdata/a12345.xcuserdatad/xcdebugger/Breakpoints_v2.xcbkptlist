@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MLSectionPageView/MLSectionPage/MLSectionControl/MLSectionControl.m"
-            timestampString = "562844445.7518539"
+            timestampString = "562845238.976503"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "576"
-            endingLineNumber = "576"
+            startingLineNumber = "570"
+            endingLineNumber = "570"
             landmarkName = "-convertAttributedString:"
             landmarkType = "7">
          </BreakpointContent>

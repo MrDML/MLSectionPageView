@@ -74,7 +74,10 @@ NS_ASSUME_NONNULL_BEGIN
 // 横条的高度
 @property (nonatomic, assign) CGFloat sectionStripeHeight;
 
+@property (nonatomic, readonly) NSInteger selectionIndex;
 
+// 移动到指定的位置
+- (void)moveSectionItemToPostionIndex:(NSInteger)index WithAnimated:(BOOL)animated;
 @end
 
 NS_ASSUME_NONNULL_END
