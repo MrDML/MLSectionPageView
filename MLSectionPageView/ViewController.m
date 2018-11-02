@@ -20,13 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    
-    NSArray *titles = @[@"one",@"Two",@"Three",@"Four",@"Five",@"Six"];
 
-    self.sectionPageView = [[MLSectionPageView alloc] init];
+    NSArray *titles = @[@"猜你喜欢",@"娱乐",@"八卦",@"休息时间",@"新闻",@"段子",@"猜你",@"精彩",@"视频",@"电影",@"资讯",@"体育",@"科技",@"文学",@"体育",@"科技",@"文学",@"体育",@"科技",@"文学",@"体育",@"科技",@"文学",@"体育",@"科技",@"文学"];
+
+    self.sectionPageView = [[MLSectionPageView alloc] initWithWithActiveTitles:titles WithInactiveTitles:titles];
     self.sectionPageView.frame = CGRectMake(0, StatusBarHeight + 44, ScreeWidth, ScreeHeight - (StatusBarHeight + 44));
-    
-    self.sectionPageView.backgroundColor = [UIColor redColor];
+
+    self.sectionPageView.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:self.sectionPageView];
     
     

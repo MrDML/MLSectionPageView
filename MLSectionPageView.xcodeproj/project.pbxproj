@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		489D2BFD218BE37000305C77 /* MLSectionScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D2BFC218BE37000305C77 /* MLSectionScrollView.m */; };
 		48F9269A218AD802003200F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F92699218AD802003200F5 /* AppDelegate.m */; };
 		48F9269D218AD803003200F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F9269C218AD803003200F5 /* ViewController.m */; };
 		48F926A0218AD803003200F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F9269E218AD803003200F5 /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		48F926BD218AD805003200F5 /* MLSectionPageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F926BC218AD805003200F5 /* MLSectionPageViewUITests.m */; };
 		48F926D0218ADA53003200F5 /* MLSectionPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F926CF218ADA53003200F5 /* MLSectionPageView.m */; };
 		48F926D3218AE49D003200F5 /* MLSectionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F926D2218AE49D003200F5 /* MLSectionControl.m */; };
-		48F926D6218AEA72003200F5 /* MLSectionScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F926D5218AEA72003200F5 /* MLSectionScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		489D2BFB218BE37000305C77 /* MLSectionScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSectionScrollView.h; sourceTree = "<group>"; };
+		489D2BFC218BE37000305C77 /* MLSectionScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSectionScrollView.m; sourceTree = "<group>"; };
 		48F92695218AD802003200F5 /* MLSectionPageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLSectionPageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F92698218AD802003200F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48F92699218AD802003200F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,8 +60,6 @@
 		48F926CF218ADA53003200F5 /* MLSectionPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSectionPageView.m; sourceTree = "<group>"; };
 		48F926D1218AE49D003200F5 /* MLSectionControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSectionControl.h; sourceTree = "<group>"; };
 		48F926D2218AE49D003200F5 /* MLSectionControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSectionControl.m; sourceTree = "<group>"; };
-		48F926D4218AEA72003200F5 /* MLSectionScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLSectionScrollView.h; sourceTree = "<group>"; };
-		48F926D5218AEA72003200F5 /* MLSectionScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLSectionScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,10 +164,10 @@
 		48F926CC218ADA35003200F5 /* MLSectionControl */ = {
 			isa = PBXGroup;
 			children = (
+				489D2BFB218BE37000305C77 /* MLSectionScrollView.h */,
+				489D2BFC218BE37000305C77 /* MLSectionScrollView.m */,
 				48F926D1218AE49D003200F5 /* MLSectionControl.h */,
 				48F926D2218AE49D003200F5 /* MLSectionControl.m */,
-				48F926D4218AEA72003200F5 /* MLSectionScrollView.h */,
-				48F926D5218AEA72003200F5 /* MLSectionScrollView.m */,
 			);
 			path = MLSectionControl;
 			sourceTree = "<group>";
@@ -313,7 +313,7 @@
 				48F9269D218AD803003200F5 /* ViewController.m in Sources */,
 				48F926A8218AD805003200F5 /* main.m in Sources */,
 				48F9269A218AD802003200F5 /* AppDelegate.m in Sources */,
-				48F926D6218AEA72003200F5 /* MLSectionScrollView.m in Sources */,
+				489D2BFD218BE37000305C77 /* MLSectionScrollView.m in Sources */,
 				48F926D3218AE49D003200F5 /* MLSectionControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
